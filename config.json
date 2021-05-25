@@ -1,0 +1,10 @@
+{
+    "debug": 1,
+    "mqtt_broker": "mqtt.home.gan",
+    "client_id": "http-err-mon",
+    "syslog_port": 5514,
+    "mqtt_port": 1883,
+    "notify_topic": "alert/A10Thunder",
+    "username": "test",
+    "password": "test"
+}
