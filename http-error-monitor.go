@@ -96,6 +96,9 @@ func main() {
 		fmt.Println(err)
 		os.Exit(1)
 	}
+	if config.Syslog_port == 0 {
+		config.Syslog_port = 514
+	}
 
 	//------------------[  MQTT Setup Stuff  ]-----------------------
 	opts := mqtt.NewClientOptions()

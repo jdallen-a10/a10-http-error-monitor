@@ -9,4 +9,5 @@ RUN CGO_ENABLED=0 GOOS=linux go build -o a10-http-error-monitor ./...
 FROM alpine:latest as production
 
 COPY --from=builder /app .
+EXPOSE 514/udp
 CMD ["./a10-http-error-monitor"]
